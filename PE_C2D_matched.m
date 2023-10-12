@@ -10,7 +10,7 @@ function [Dz]=PE_C2D_matched(Ds,h,causal,omegabar)
         %   s=tf('s'); Dc=(s+1)/((s+1)*(s+10));c2d(Dc,0.01,'matched')
         % TEST for symbolic solution:
         % syms z1 p1; h=0.01; Ds=RR_tf([1,z1],[1,p1,1]); PE_C2D_matched(Ds,h,1)
-        % Parsa Esfandiari, hw1, https://github.com/tbewley/RR 
+        % Parsa Esfandiari, hw1, https://github.com/ParsaEsfandiari/
             if nargin==2, omegabar=0; causal=0; 
             elseif nargin==3, omegabar=0; end
             
